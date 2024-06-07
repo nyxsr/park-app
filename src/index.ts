@@ -1,7 +1,7 @@
 import cors from "@elysiajs/cors";
 import { Elysia } from "elysia";
-import park from "./controllers/park";
 import swagger from "@elysiajs/swagger";
+import park from "./routes/park.route";
 
 export const app = new Elysia()
   .use(cors())
@@ -26,5 +26,7 @@ export const app = new Elysia()
 console.group("🦊 Server is running fast on");
 console.log(`${app.server?.url}`);
 console.write("\n");
-console.log(`You can open the documentation in your browser: ${app.server?.url}swagger`);
+console.log(
+  `You can open the documentation in your browser: ${app.server?.url}swagger`
+);
 console.groupEnd();
