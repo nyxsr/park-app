@@ -6,7 +6,12 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/cors": "^1.0.2",
+    "@elysiajs/jwt": "^1.0.2",
+    "@elysiajs/swagger": "^1.0.5",
+    "dotenv": "^16.4.5",
+    "elysia": "latest",
+    "moment-timezone": "^0.5.45"
   },
   "devDependencies": {
     "bun-types": "latest"
